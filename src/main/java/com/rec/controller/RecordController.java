@@ -14,13 +14,14 @@ import com.rec.service.IRecordService;
 @RestController
 @RequestMapping("/record")
 public class RecordController {
-	
+
 	@Autowired
 	private IRecordService recordService;
-	
+
 	@GetMapping("/emp/{eId}")
-	public List<Record> getRecord(@PathVariable("eId")Long eId){
+	public List<Record> getRecord(@PathVariable("eId") Long eId) {
 		return this.recordService.getRecordOfEmployee(eId);
+
 	}
 
 }

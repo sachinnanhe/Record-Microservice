@@ -10,4 +10,6 @@ public class RecordMicroserviceApplication {
 		SpringApplication.run(RecordMicroserviceApplication.class, args);
 	}
 
+	
+	
 }
